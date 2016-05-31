@@ -9,12 +9,10 @@ import java.util.Vector;
  */
 public class Adjazenzmatrix {
     
-    
+    private Node nodes[][];
     
 
     public Adjazenzmatrix(File numbers) {
-        
-        
     }
     
 
