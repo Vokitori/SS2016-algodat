@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         File numbers = new File("numbers.txt");
-        Adjazenzmatrix matrix = new Adjazenzmatrix(numbers);
+        Graph matrix = new Graph(numbers);
         
     }
 
