@@ -11,21 +11,21 @@ import java.util.Vector;
  */
 public class Graph {
 
-    private Node nodes[];
+    public final Node nodes[];
 
-    private double adjazenzmatrix[][];
+    public final double adjazenzmatrix[][];
 
     public Graph(File file) throws FileNotFoundException {
-        fileToNodes(file);
-        generateAdjazenzmatrix();
+        nodes = fileToNodes(file);
+        adjazenzmatrix = generateAdjazenzmatrix();
     }
 
-    private void fileToNodes(File file) throws FileNotFoundException {
+    private Node[] fileToNodes(File file) throws FileNotFoundException {
         Scanner scanner = new Scanner(file);
 
         int size = Integer.parseInt(scanner.nextLine());
 
-        nodes = new Node[size];
+        Node[] nodes = new Node[size];
         scanner.useDelimiter(" ");
 
         for (int i = 0; scanner.hasNextLine(); i++) {
@@ -33,16 +33,17 @@ public class Graph {
             double y = Double.parseDouble(scanner.nextLine());
             nodes[i] = new Node(x, y);
         }
+        return nodes;
     }
 
-    private void generateAdjazenzmatrix() {
-        adjazenzmatrix = new double[nodes.length][nodes.length];
+    private double[][] generateAdjazenzmatrix() {
+        double[][] adjazenzmatrix = new double[nodes.length][nodes.length];
         for (int x = 0; x < nodes.length; x++) {
             for (int y = 0; y <= x; y++) {
-                adjazenzmatrix[x][y]
-                        = (adjazenzmatrix[y][x] = distance(nodes[x], nodes[y]));
+                adjazenzmatrix[x][y] = (adjazenzmatrix[y][x] = distance(nodes[x], nodes[y]));
             }
         }
+        return adjazenzmatrix;
     }
 
     public static final double distance(Node n, Node m) {
@@ -62,7 +63,7 @@ public class Graph {
             for (int x = 0; x < adjazenzmatrix[y].length; x++) {
                 System.out.print(((int) (adjazenzmatrix[y][x] * 100) / 100.0) + "\t");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
