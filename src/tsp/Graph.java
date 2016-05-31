@@ -2,6 +2,7 @@ package tsp;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.management.ManagementFactory;
 import java.util.Scanner;
 import java.util.Vector;
 
@@ -50,12 +51,12 @@ public class Graph {
         return Math.sqrt(Δx * Δx + Δy * Δy);
     }
 
-    public void printNodes(){
+    public void printNodes() {
         for (int i = 0; i < nodes.length; i++) {
             System.out.println(nodes[i]);
         }
     }
-    
+
     public void printAdjazenzmatrix() {
         for (int y = 0; y < adjazenzmatrix.length; y++) {
             for (int x = 0; x < adjazenzmatrix[y].length; x++) {
@@ -63,5 +64,13 @@ public class Graph {
             }
             System.out.println("");
         }
+    }
+
+    public static final long getCpuTime() {
+        return getCpuTime(Thread.currentThread());
+    }
+
+    public static final long getCpuTime(Thread thread) {
+        return ManagementFactory.getThreadMXBean().getThreadCpuTime(thread.getId()) / 1000000;
     }
 }
