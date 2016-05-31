@@ -16,6 +16,7 @@ public class Graph {
 
     public Graph(File file) throws FileNotFoundException {
         fileToNodes(file);
+        generateAdjazenzmatrix();
     }
 
     private void fileToNodes(File file) throws FileNotFoundException {
