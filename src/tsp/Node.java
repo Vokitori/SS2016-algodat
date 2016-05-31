@@ -13,4 +13,11 @@ public class Node {
         this.y = y;
     }
 
+    @Override
+    public String toString() {
+        return "Node{" + x + ", " + y + '}';
+    }
+    
+    
+
 }
