@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import tsp.Graph;
-import tsp.Ref;
 
 /**
  * @author link
