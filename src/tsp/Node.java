@@ -12,10 +12,15 @@ public class Node {
         this.x = x;
         this.y = y;
     }
+    
+    public Node(Node node){
+        this.x = node.x;
+        this.y = node.y;
+    }
 
     @Override
     public String toString() {
-        return "Node{" + x + ", " + y + '}';
+        return "{" + x + ", " + y + '}';
     }
 
 }

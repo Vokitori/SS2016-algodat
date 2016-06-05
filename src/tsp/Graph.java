@@ -82,4 +82,5 @@ public class Graph {
     public static final long getCpuTime(Thread thread) {
         return ManagementFactory.getThreadMXBean().getThreadCpuTime(thread.getId()) / 1000000;
     }
+    
 }
