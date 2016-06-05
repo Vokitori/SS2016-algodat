@@ -67,6 +67,14 @@ public class Graph {
         }
     }
 
+    public double getPathLength(Integer... nodeIndices) {
+        double sum = 0;
+        for (int i = 1; i < nodeIndices.length; i++) {
+            sum += adjazenzmatrix[nodeIndices[i - 1]][nodeIndices[i]];
+        }
+        return sum;
+    }
+
     public static final long getCpuTime() {
         return getCpuTime(Thread.currentThread());
     }
