@@ -10,7 +10,7 @@ import tsp.Node;
 public class NearestNeighbour {
 
     private static boolean visitedNodes[];
-    private static String tripOrder = "RoundTrip: ";
+    private static String tripOrder = "Nearest Neighbour: ";
     private static double sum = 0;
     private static int remainingNodes;
    
@@ -38,7 +38,7 @@ public class NearestNeighbour {
             currentNodeIndex = getNextEdge(currentNodeIndex, graph);
         }
         backToStart(startNodeIndex, currentNodeIndex, graph);
-        tripOrder += ("\nSum: "+ sum);
+        tripOrder += ("\nSum: "+ sum+"\n");
         return tripOrder;
     }
     

@@ -74,6 +74,15 @@ public class Graph {
         }
         return sum;
     }
+       public double getCycleLenght(Integer... nodeIndices) {
+        double sum = 0;
+        for (int i = 1; i < nodeIndices.length; i++) {
+            
+            sum += adjazenzmatrix[nodeIndices[i - 1]][nodeIndices[i]];
+        }
+          
+        return sum + adjazenzmatrix[nodeIndices[0]][nodeIndices[nodeIndices.length-1]];
+    }
 
     public static final long getCpuTime() {
         return getCpuTime(Thread.currentThread());
