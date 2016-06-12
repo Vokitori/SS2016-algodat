@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.Vector;
 
 /**
- * @author Voki
+ * @author Thomas Schierl und Viktoria Paschinger
  */
 public class Graph {
 

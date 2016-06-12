@@ -1,7 +1,7 @@
 package tsp;
 
 /**
- * @author link
+ * @author Thomas Schierl und Viktoria Paschinger
  */
 public class Node {
 

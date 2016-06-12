@@ -6,10 +6,9 @@ import java.util.logging.Logger;
 import tsp.Graph;
 
 /**
- * @author Voki
+ * @author Thomas Schierl und Viktoria Paschinger
  */
 public class NearestNeighbour {
-
     private static boolean visitedNodes[];
     private static String tripOrder = "Nearest Neighbour:";
     private static double sum = 0;

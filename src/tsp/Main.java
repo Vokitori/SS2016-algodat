@@ -9,12 +9,9 @@ import tsp.heuristics.NaturalSelection;
 
 /**
  *
- * protokoll schreiben, Onotation: neares neighbour: n^2, enumeration: n!
- *
- * 
  * -jar tsp.jar -e|-n|-s testfilename
  *
- * @author Voki
+ * @author Thomas Schierl und Viktoria Paschinger
  */
 public class Main {
 

@@ -7,7 +7,7 @@ import java.util.List;
 import tsp.Graph;
 
 /**
- * @author link
+ * @author Thomas Schierl und Viktoria Paschinger
  */
 public class FullEnumeration {
 /**

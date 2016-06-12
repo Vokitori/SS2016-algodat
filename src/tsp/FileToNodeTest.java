@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 /**
- * @author Voki
+ * @author Thomas Schierl und Viktoria Paschinger
  */
 public class FileToNodeTest {
     public static void main(String[] args) throws FileNotFoundException {
