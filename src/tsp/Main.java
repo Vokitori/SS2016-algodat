@@ -42,9 +42,9 @@ public class Main {
             long cpuDelta = cpuStop - cpuStart;
             long timeDelta = timeStop - timeStart;
             System.out.println("CPU-Time:\t" + cpuDelta + "ms");
-            System.out.println("Time:\t\t" + Math.round(timeDelta / 1000000.0 +0.5) + "ms");
+            System.out.println("Time:\t\t" + Math.round(timeDelta / 1000000.0 + 0.5) + "ms");
             System.out.println("-------------------------------");
         }
-      
+
     }
 }

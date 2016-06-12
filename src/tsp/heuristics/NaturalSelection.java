@@ -58,7 +58,7 @@ public class NaturalSelection {
         }
 
         for (int j = 0; j < parent.length; j++) {
-            shortestPath += parent[j];
+            shortestPath += parent[j] + ", ";
         }
         return shortestPath += "\nPath lengh: " + graph.getCycleLenght(parent) + "\n";
     }
