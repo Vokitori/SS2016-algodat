@@ -11,7 +11,7 @@ import tsp.heuristics.NaturalSelection;
  *
  * protokoll schreiben, Onotation: neares neighbour: n^2, enumeration: n!
  *
- * TESTFILES ERSTELLEN!!!! testfiles in dist ordner schieben aufruf mit: java
+ * 
  * -jar tsp.jar -e|-n|-s testfilename
  *
  * @author Voki
@@ -45,6 +45,14 @@ public class Main {
             System.out.println("Time:\t\t" + Math.round(timeDelta / 1000000.0 + 0.5) + "ms");
             System.out.println("-------------------------------");
         }
+         String content1, contet2;
+        
+//        int number, number2;
+//        for (int i = 0; i < 40; i++) {
+//            number = (int)(Math.random() * 100);
+//            number2 = (int)(Math.random() * 100);
+//            System.out.println(number+" "+number2);
+//        }
 
     }
 }
